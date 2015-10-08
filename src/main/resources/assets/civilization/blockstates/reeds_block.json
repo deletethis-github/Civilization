@@ -1,0 +1,7 @@
+{
+    "variants": {
+    	"axis=x": { "model": "civilization:reeds_block", "x":90, "y":90 },
+        "axis=y": { "model": "civilization:reeds_block" },
+        "axis=z": { "model": "civilization:reeds_block", "x": 90 }
+    }
+}

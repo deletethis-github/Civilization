@@ -1,6 +1,6 @@
 package deletethis.civilization;
 
-public class ModInfo
+public class CivilizationInfo
 {
 	public static final String ID = "civilization";
     public static final String NAME = "Civilization";

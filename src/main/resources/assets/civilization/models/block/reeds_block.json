@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "civilization:blocks/reeds_block_top",
+        "side": "civilization:blocks/reeds_block_side"
+    }
+}

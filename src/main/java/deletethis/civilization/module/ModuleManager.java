@@ -13,7 +13,7 @@ public class ModuleManager
 	public ModuleManager()
 	{
 		modules = new HashMap<String, CivilizationModule>();
-		this.addModule(ModuleCore.class);
+		this.addModule(ModuleMaterials.class);
 	}
 	
 	private void addModule(Class<? extends CivilizationModule> moduleClass)
