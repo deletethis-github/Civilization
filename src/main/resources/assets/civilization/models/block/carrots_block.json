@@ -1,0 +1,110 @@
+{
+    "__createdwith": "opl's Model Creator",
+    "ambientocclusion": false,
+    "textures": {
+        "barrel": "civilization:blocks/barrel",
+        "carrots": "civilization:blocks/carrots",
+        "planks_oak": "blocks/planks_oak"
+    },
+    "elements": [
+        {
+            "from": [0,0,0],
+            "to": [16,14,16],
+            "faces": {
+                "up": {
+                    "texture": "#carrots"
+                },
+                "down": {
+                    "texture": "#planks_oak"
+                },
+                "west": {
+                    "texture": "#barrel"
+                },
+                "east": {
+                    "texture": "#barrel"
+                },
+                "north": {
+                    "texture": "#barrel"
+                },
+                "south": {
+                    "texture": "#barrel"
+                }
+            }
+        },
+        {
+            "from": [0,14,0],
+            "to": [16,16,1],
+            "faces": {
+                "up": {
+                    "uv": [0,15,16,16],
+                    "texture": "#barrel"
+                },
+                "west": {
+                    "texture": "#barrel"
+                },
+                "east": {
+                    "texture": "#barrel"
+                },
+                "north": {
+                    "texture": "#barrel"
+                },
+                "south": {
+                    "texture": "#barrel"
+                }
+            }
+        },
+        {
+            "from": [0,14,15],
+            "to": [16,16,16],
+            "faces": {
+                "up": {
+                    "texture": "#barrel"
+                },
+                "west": {
+                    "texture": "#barrel"
+                },
+                "east": {
+                    "texture": "#barrel"
+                },
+                "north": {
+                    "texture": "#barrel"
+                },
+                "south": {
+                    "texture": "#barrel"
+                }
+            }
+        },
+        {
+            "from": [0,14,1],
+            "to": [1,16,15],
+            "faces": {
+                "up": {
+                    "uv": [0,15,16,16],
+                    "texture": "#barrel"
+                },
+                "west": {
+                    "texture": "#barrel"
+                },
+                "east": {
+                    "texture": "#barrel"
+                }
+            }
+        },
+        {
+            "from": [15,14,1],
+            "to": [16,16,15],
+            "faces": {
+                "up": {
+                    "uv": [0,15,16,16],
+                    "texture": "#barrel"
+                },
+                "west": {
+                    "texture": "#barrel"
+                },
+                "east": {
+                    "texture": "#barrel"
+                }
+            }
+        }
+    ]
+}

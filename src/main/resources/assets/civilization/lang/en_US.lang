@@ -1,2 +1,5 @@
 tile.reeds_block.name=Sugar Cane Bale
 tile.flint_block.name=Block of Flint
+tile.charcoal_block.name=Block of Charcoal
+tile.carrots_block.name=Barrel of Carrots
+tile.potatoes_block.name=Barrel of Potatoes
