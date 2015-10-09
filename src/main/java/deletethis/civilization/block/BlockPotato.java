@@ -4,14 +4,14 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
-public class BlockCarrotsBarrel extends Block
+public class BlockPotato extends Block
 {
-	public BlockCarrotsBarrel()
+	public BlockPotato()
 	{
 		super(Material.wood);
-		this.setUnlocalizedName("carrots_block");
-		this.setHardness(5.0F);
-		this.setResistance(10.0F);
+		this.setUnlocalizedName("potato_block");
+		this.setHardness(2.0F);
+		this.setResistance(5.0F);
 		this.setStepSound(soundTypeWood);
         this.setCreativeTab(CreativeTabs.tabBlock);
 	}

@@ -2,8 +2,8 @@
     "__createdwith": "opl's Model Creator",
     "ambientocclusion": false,
     "textures": {
+    	"particle": "civilization:blocks/barrel",
         "barrel": "civilization:blocks/barrel",
-        "potatoes": "civilization:blocks/potatoes",
         "planks_oak": "blocks/planks_oak"
     },
     "elements": [
@@ -12,7 +12,7 @@
             "to": [16,14,16],
             "faces": {
                 "up": {
-                    "texture": "#potatoes"
+                    "texture": "#contents"
                 },
                 "down": {
                     "texture": "#planks_oak"

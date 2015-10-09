@@ -10,9 +10,9 @@ public class BlockFlint extends Block
 	{
 		super(Material.piston);
 		this.setUnlocalizedName("flint_block");
-		this.setHardness(5.0F);
-		this.setResistance(10.0F);
-		this.setStepSound(soundTypePiston);
+		this.setHardness(3.0F);
+		this.setResistance(5.0F);
+		this.setStepSound(soundTypeStone);
         this.setCreativeTab(CreativeTabs.tabBlock);
 	}
 }

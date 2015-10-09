@@ -12,7 +12,7 @@ public class BlockCharcoal extends Block
 		this.setUnlocalizedName("charcoal_block");
 		this.setHardness(5.0F);
 		this.setResistance(10.0F);
-		this.setStepSound(soundTypePiston);
+		this.setStepSound(soundTypeStone);
         this.setCreativeTab(CreativeTabs.tabBlock);
 	}
 }

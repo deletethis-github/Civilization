@@ -1,5 +1,5 @@
 {
-  "parent": "civilization:block/carrots_block",
+  "parent": "civilization:block/potato_block",
   "display": {
     "thirdperson": {
       "rotation": [ 10, -45, 170 ],

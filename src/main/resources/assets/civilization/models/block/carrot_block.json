@@ -1,0 +1,6 @@
+{
+    "parent": "civilization:block/barrel",
+    "textures": {
+        "contents": "civilization:blocks/carrots"
+    }
+}
