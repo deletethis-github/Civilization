@@ -6,6 +6,8 @@ import deletethis.civilization.block.BlockCharcoal;
 import deletethis.civilization.block.BlockFlint;
 import deletethis.civilization.block.BlockPotato;
 import deletethis.civilization.block.BlockReeds;
+import deletethis.civilization.block.BlockString;
+import deletethis.civilization.block.BlockSugar;
 import deletethis.civilization.util.EnumInitStage;
 import deletethis.civilization.util.EnumProxySide;
 import deletethis.civilization.util.RegistryHelper;
@@ -24,6 +26,8 @@ public class ModuleMaterials extends CivilizationModule
 	public static BlockCharcoal blockCharcoal;
 	public static BlockCarrot blockCarrot;
 	public static BlockPotato blockPotato;
+	public static BlockSugar blockSugar;
+	public static BlockString blockString;
 	
 	public ModuleMaterials()
 	{
@@ -66,31 +70,45 @@ public class ModuleMaterials extends CivilizationModule
 		
 		blockPotato = new BlockPotato();
 		GameRegistry.registerBlock(blockPotato, RegistryHelper.getRegistryName(blockPotato));
+		
+		blockSugar = new BlockSugar();
+		GameRegistry.registerBlock(blockSugar, RegistryHelper.getRegistryName(blockSugar));
+		
+		blockString = new BlockString();
+		GameRegistry.registerBlock(blockString, RegistryHelper.getRegistryName(blockString));
 	}
 	
 	public void registerItemBlockModels()
 	{
 		ItemModelMesher itemModelMesher = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
 		
-		Item blockReedsItemBlock = GameRegistry.findItem(CivilizationInfo.ID, blockReeds.getUnlocalizedName().substring(5));
+		Item blockReedsItemBlock = GameRegistry.findItem(CivilizationInfo.ID, RegistryHelper.getRegistryName(blockReeds));
 		ModelResourceLocation blockReedsModelResourceLocation = new ModelResourceLocation(RegistryHelper.getFullRegistryName(blockReeds), "inventory");
 		itemModelMesher.register(blockReedsItemBlock, 0, blockReedsModelResourceLocation);
 		
-		Item blockFlintItemBlock = GameRegistry.findItem(CivilizationInfo.ID, blockFlint.getUnlocalizedName().substring(5));
+		Item blockFlintItemBlock = GameRegistry.findItem(CivilizationInfo.ID, RegistryHelper.getRegistryName(blockFlint));
 		ModelResourceLocation blockFlintModelResourceLocation = new ModelResourceLocation(RegistryHelper.getFullRegistryName(blockFlint), "inventory");
 		itemModelMesher.register(blockFlintItemBlock, 0, blockFlintModelResourceLocation);
 		
-		Item blockCharcoalItemBlock = GameRegistry.findItem(CivilizationInfo.ID, blockCharcoal.getUnlocalizedName().substring(5));
+		Item blockCharcoalItemBlock = GameRegistry.findItem(CivilizationInfo.ID, RegistryHelper.getRegistryName(blockCharcoal));
 		ModelResourceLocation blockCharcoalModelResourceLocation = new ModelResourceLocation(RegistryHelper.getFullRegistryName(blockCharcoal), "inventory");
 		itemModelMesher.register(blockCharcoalItemBlock, 0, blockCharcoalModelResourceLocation);
 		
-		Item blockCarrotItemBlock = GameRegistry.findItem(CivilizationInfo.ID, blockCarrot.getUnlocalizedName().substring(5));
+		Item blockCarrotItemBlock = GameRegistry.findItem(CivilizationInfo.ID, RegistryHelper.getRegistryName(blockCarrot));
 		ModelResourceLocation blockCarrotModelResourceLocation = new ModelResourceLocation(RegistryHelper.getFullRegistryName(blockCarrot), "inventory");
 		itemModelMesher.register(blockCarrotItemBlock, 0, blockCarrotModelResourceLocation);
 		
-		Item blockPotatoItemBlock = GameRegistry.findItem(CivilizationInfo.ID, blockPotato.getUnlocalizedName().substring(5));
+		Item blockPotatoItemBlock = GameRegistry.findItem(CivilizationInfo.ID, RegistryHelper.getRegistryName(blockPotato));
 		ModelResourceLocation blockPotatoModelResourceLocation = new ModelResourceLocation(RegistryHelper.getFullRegistryName(blockPotato), "inventory");
 		itemModelMesher.register(blockPotatoItemBlock, 0, blockPotatoModelResourceLocation);
+		
+		Item blockSugarItemBlock = GameRegistry.findItem(CivilizationInfo.ID, RegistryHelper.getRegistryName(blockSugar));
+		ModelResourceLocation blockSugarModelResourceLocation = new ModelResourceLocation(RegistryHelper.getFullRegistryName(blockSugar), "inventory");
+		itemModelMesher.register(blockSugarItemBlock, 0, blockSugarModelResourceLocation);
+		
+		Item blockStringItemBlock = GameRegistry.findItem(CivilizationInfo.ID, RegistryHelper.getRegistryName(blockString));
+		ModelResourceLocation blockStringModelResourceLocation = new ModelResourceLocation(RegistryHelper.getFullRegistryName(blockString), "inventory");
+		itemModelMesher.register(blockStringItemBlock, 0, blockStringModelResourceLocation);
 	}
 	
 	public void addRecipes()
@@ -109,5 +127,11 @@ public class ModuleMaterials extends CivilizationModule
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.potato, 9), new ItemStack(blockPotato, 1));
 		GameRegistry.addShapedRecipe(new ItemStack(blockPotato, 1), "ppp", "ppp", "ppp", 'p', new ItemStack(Items.potato, 1));
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.sugar, 9), new ItemStack(blockSugar, 1));
+		GameRegistry.addShapedRecipe(new ItemStack(blockSugar, 1), "sss", "sss", "sss", 's', new ItemStack(Items.sugar, 1));
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.string, 9), new ItemStack(blockString, 1));
+		GameRegistry.addShapedRecipe(new ItemStack(blockString, 1), "sss", "sss", "sss", 's', new ItemStack(Items.string, 1));
 	}
 }

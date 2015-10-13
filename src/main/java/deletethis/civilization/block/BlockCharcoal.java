@@ -8,7 +8,7 @@ public class BlockCharcoal extends Block
 {
 	public BlockCharcoal()
 	{
-		super(Material.piston);
+		super(Material.rock);
 		this.setUnlocalizedName("charcoal_block");
 		this.setHardness(5.0F);
 		this.setResistance(10.0F);

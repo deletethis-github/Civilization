@@ -3,3 +3,5 @@ tile.flint_block.name=Block of Flint
 tile.charcoal_block.name=Block of Charcoal
 tile.carrot_block.name=Barrel of Carrots
 tile.potato_block.name=Barrel of Potatoes
+tile.sugar_block.name=Block of Sugar
+tile.string_block.name=Large Spool of String

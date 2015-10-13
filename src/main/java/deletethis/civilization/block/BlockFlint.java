@@ -8,7 +8,7 @@ public class BlockFlint extends Block
 {
 	public BlockFlint()
 	{
-		super(Material.piston);
+		super(Material.rock);
 		this.setUnlocalizedName("flint_block");
 		this.setHardness(3.0F);
 		this.setResistance(5.0F);
